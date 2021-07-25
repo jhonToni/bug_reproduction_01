@@ -1,0 +1,20 @@
+
+
+load("@npm//@bazel/typescript:index.bzl", "ts_project", "ts_config")
+
+
+
+ts_config(
+    name = "tsconfig",
+    src = "tsconfig.json"
+)
+
+
+
+ts_project(
+    name = "package",
+    # glob is a quick way to select all the code,
+    # but has performance penalty in that Bazel must evaluate it.
+    srcs = glob(["*.ts"]),
+    tsconfig = "tsconfig"
+)

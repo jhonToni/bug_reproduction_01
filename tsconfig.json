@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "target": "es2015",
+    "module": "es2020",
+    "jsx": "react",
+    "moduleResolution": "node"
+  }
+
+}

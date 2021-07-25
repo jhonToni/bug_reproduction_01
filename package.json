@@ -1,0 +1,22 @@
+{
+    "name": "bazel_workspace",
+    "version": "0.1.0",
+    "private": true,
+    "devDependencies": {
+        "@bazel/bazelisk": "latest",
+        "@bazel/buildifier": "latest",
+        "@bazel/ibazel": "latest",
+        "tsickle": "^0.43.0",
+        "tsutils": "^3.21.0",
+        "typescript": "^4.3.5",
+        "@bazel/typescript": "^3.7.0"
+    },
+    "scripts": {
+        "build": "bazel build //... --verbose_failures",
+        "test": "bazel test //...",
+        "clean": "bazel clean --expunge"
+    },
+    "dependencies": {
+
+    }
+}
